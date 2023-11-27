@@ -11,22 +11,27 @@
 </head>
 
 <body>
-    <header>
-        <h1>PHP Badwords</h1>
+    <header class="text-center">
+        <h1 class="display-1">PHP Badwords</h1>
     </header>
     <main class="container">
         <form action="response.php" method="GET">
-            <label for="paragraph">
-                Inserisci un testo!!
-            </label>
-            <textarea name="paragraph" id="paragraph" cols="30" rows="7" placeholder="Lorem Ipsum..."
-                class="form-control"></textarea>
+            <div class="py-4">
+                <label for="paragraph">
+                    Inserisci un testo!!
+                </label>
+                <textarea name="paragraph" id="paragraph" cols="30" rows="7" placeholder="Lorem Ipsum..."
+                    class="form-control"></textarea>
+            </div>
 
-            <label for="censure">
-                Parola da censurare:
-            </label>
-            <input type="text" name="censure" id="censure" placeholder="Lorem">
-            <div>
+            <div class="py-4">
+                <label for="censure">
+                    Parola da censurare:
+                </label>
+                <input type="text" name="censure" id="censure" placeholder="Lorem" class="form-control w-25">
+            </div>
+
+            <div class="text-center">
                 <button class="btn btn-primary" type="submit">Invia</button>
             </div>
         </form>
