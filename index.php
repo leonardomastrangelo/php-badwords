@@ -11,7 +11,26 @@
 </head>
 
 <body>
+    <header>
+        <h1>PHP Badwords</h1>
+    </header>
+    <main class="container">
+        <form action="response.php" method="GET">
+            <label for="paragraph">
+                Inserisci un testo!!
+            </label>
+            <textarea name="paragraph" id="paragraph" cols="30" rows="7" placeholder="Lorem Ipsum..."
+                class="form-control"></textarea>
 
+            <label for="censure">
+                Parola da censurare:
+            </label>
+            <input type="text" name="censure" id="censure" placeholder="Lorem">
+            <div>
+                <button class="btn btn-primary" type="submit">Invia</button>
+            </div>
+        </form>
+    </main>
 </body>
 
 </html>
